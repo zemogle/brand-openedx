@@ -1,3 +1,34 @@
-// Use this file to set SASS variables for @edx/paragon
-// See _variables.scss in https://github.com/openedx/paragon/blob/master/scss/core/ for reference
 $primary: #A6CE39;
+$primary-light: #F2F7F8;
+$blue: #00ADEF;
+$red: #EF4123;
+$green: #A6CE39;
+$off-white: #fcfcfc;
+$grey-level1: #3b4249;
+$grey-level2: #262e35;
+$grey-level3: #192026;
+$grey-level4: #13181D;
+
+// Theme fonts
+$font-family-title: 'Unica One', sans-serif;
+$serif: "Noto Sans", sans-serif;
+$f-sans-serif: "Noto Sans", sans-serif;
+
+// Initialize the Open edX Bootstrap theme
+@import 'edx-bootstrap/sass/open-edx/theme';
+
+
+$text-color-primary: $off-white;
+// Introducing new variables
+
+$dark: $grey-level4;
+$light-dark: $grey-level1;
+$big-screen: 1200px;
+$body-background: $grey-level2;
+$header-size1: 2.5rem;
+$header-size2: 1.9rem;
+$header-size3: 1.25rem;
+
+
+$warning-400: #ffe340;
+$page-color-transition: transparent .2s ease, color .2s ease;

@@ -1,6 +1,21 @@
 // Use this file to define style overrides for @edx/paragon
 // This file is included after all Paragon styles, but should generally avoid using private mixins in Paragon.
-#root .learner-variant-header,
-#root .site-header-desktop {
-    background-color: #9e1b34;
+#root header.customise.learning-header,
+#root main {
+    background-color: $dark;
+    color: $off-white;
+}
+
+#root header.customise.learning-header .course-title-lockup .course-info-header .title,
+#root header.customise.learning-header .course-title-lockup .course-info-header .org,
+#root header.customise.learning-header .course-title-lockup .nav-course a {
+    color: $off-white;
+}
+
+.collapsible-card-lg {
+    background-color: $grey-level2;
+}
+
+[dir=ltr] #courseHome-outline .pgn_collapsible {
+    border-left: 8px solid $primary;
 }

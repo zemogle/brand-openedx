@@ -1,9 +1,71 @@
 // Use this file to define style overrides for @edx/paragon
 // This file is included after all Paragon styles, but should generally avoid using private mixins in Paragon.
-#root header.customise.learning-header,
-#root main {
-    background-color: $dark;
-    color: $off-white;
+
+// Theme fonts
+$font-family-title: 'Unica One', sans-serif;
+$serif: "Noto Sans", sans-serif;
+
+$text-color-primary: $off-white;
+// Introducing new variables
+
+$dark: $grey-level4;
+$light-dark: $grey-level1;
+$big-screen: 1200px;
+$body-background: $grey-level2;
+
+body {
+  background-color: $body-background;
+  color: $off-white;
+  font-family: $serif;
+}
+
+a, .btn-link {
+  color: $primary;
+}
+
+a:hover,
+.btn-link:hover  {
+  color: $dark;
+  background-color: $primary;
+}
+
+.site-header-desktop a.logo:hover
+#root header a.logo:hover {
+  color: transparent !important;
+}
+
+.learning-header,
+.site-header-desktop {
+  background-color: $dark !important;
+  color: $off-white;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $off-white;
+  text-transform: uppercase;
+  font-family: $font-family-title !important;
+}
+
+.white, a.course-card-title {
+  color: $off-white !important;
+}
+
+.nav-underline-tabs .nav-link {
+  color: $off-white;
+}
+
+.footer {
+  background-color: $dark;
+  color: $off-white;
+}
+
+#root {
+    main {
+        background-color: $grey-level1;
+        color: $off-white;
+        min-height: calc(100vh - 234.5px);
+    }
 }
 
 #root header.customise.learning-header .course-title-lockup .course-info-header .title,
@@ -12,10 +74,38 @@
     color: $off-white;
 }
 
-.collapsible-card-lg {
-    background-color: $grey-level2;
-}
-
 [dir=ltr] #courseHome-outline .pgn_collapsible {
     border-left: 8px solid $primary;
+}
+
+
+.btn-brand {
+    background-color: $red;
+    color: $grey-level3;
+    border: 1px solid $red;
+}
+.card, .collapsible-card, .collapsible-card-lg {
+    background-color: $grey-level2;
+    color: $off-white;
+}
+
+.alert-info {
+  color: $grey-level3;
+}
+
+.course-card-banners {
+  .alert-info {
+    background-color: $grey-level2;
+    color: $off-white;
+  }
+  .alert-icon {
+    color: $off-white;
+  }
+}
+
+.pgn__card .pgn__card-header .pgn__card-header-title,
+.pgn__card .pgn__card-header .pgn__card-header-title-sm,
+.pgn__card .pgn__card-header .pgn__card-header-title-md {
+  color: $off-white;
+  font-family: $serif;
 }

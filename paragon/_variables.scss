@@ -17,13 +17,28 @@ $f-sans-serif: "Noto Sans", sans-serif;
 $text-color-primary: $off-white;
 // Introducing new variables
 
-$dark: $grey-level4;
-$light-dark: $grey-level1;
+// Introducing new variables
+
+$dark: $grey-level4; // Header and footer only
+$light-dark: $grey-level3; // body background color
 $big-screen: 1200px;
-$body-background: $grey-level2;
+$body-background: $grey-level1;
 $header-size1: 2.5rem;
 $header-size2: 1.9rem;
 $header-size3: 1.25rem;
+$text-color: $off-white;
+
+$primary-d: $primary;
+$primary-light-d: $light-dark;
+$light-dark-d:$light-dark;
+$text-color-d: $text-color;
+$text-color-primary: $text-color;
+$border-color-d: #777792;
+$light-overlay-d: #36383B;
+$danger-d: #EF4123;
+$success-d: #54CF5E;
+$btn-color-d: #112F6B;
+$body-bg-d:$body-background;
 
 $warning-400: #ffe340;
 $page-color-transition: transparent .2s ease, color .2s ease;

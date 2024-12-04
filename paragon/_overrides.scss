@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6,
 
 #root {
     main {
-        background-color: $grey-level1;
+        background-color: $light-dark;
         color: $off-white;
         min-height: calc(100vh - 234.5px);
     }
@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6,
     border: 1px solid $red;
 }
 .card, .collapsible-card, .collapsible-card-lg {
-    background-color: $grey-level2;
+    background-color: $body-background;
     color: $off-white;
 }
 

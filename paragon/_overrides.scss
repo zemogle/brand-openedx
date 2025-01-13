@@ -2,7 +2,7 @@
 // This file is included after all Paragon styles, but should generally avoid using private mixins in Paragon.
 // Theme fonts
 $font-family-title: 'Unica One', sans-serif;
-$serif: "Noto Sans", sans-serif;
+$serif: "Quattrocento Sans", sans-serif;
 
 $text-color-primary: $off-white;
 // Introducing new variables
@@ -28,9 +28,8 @@ a:hover,
   background-color: $primary;
 }
 
-.site-header-desktop a.logo:hover
-#root header a.logo:hover {
-  color: transparent !important;
+a.logo:hover {
+  background-color: transparent !important;
 }
 
 .learning-header,
@@ -46,7 +45,8 @@ h1, h2, h3, h4, h5, h6,
   font-family: $font-family-title !important;
 }
 
-.white, a.course-card-title {
+.white, a.course-card-title,
+.text-dark-500 {
   color: $off-white !important;
 }
 
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6,
 
 #root {
     main {
-        background-color: $light-dark;
+        background-color: $grey-level3;
         color: $off-white;
         min-height: calc(100vh - 234.5px);
     }
@@ -77,13 +77,18 @@ h1, h2, h3, h4, h5, h6,
     border-left: 8px solid $primary;
 }
 
-
 .btn-brand {
     background-color: $red;
     color: $grey-level3;
     border: 1px solid $red;
 }
-.card, .collapsible-card, .collapsible-card-lg {
+
+#root .course-outline-tab .raised-card {
+  background-color: $primary !important;
+}
+
+.card, .collapsible-card, .collapsible-card-lg ,
+.pgn__card, .course-card-banners .alert-info {
     background-color: $body-background;
     color: $off-white;
 }
@@ -93,11 +98,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .course-card-banners {
-  .alert-info {
-    background-color: $grey-level2;
-    color: $off-white;
-  }
-  .alert-icon {
+  .alert-icon svg {
     color: $off-white;
   }
 }

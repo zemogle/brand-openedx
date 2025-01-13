@@ -11,8 +11,8 @@ $grey-level4: #13181D;
 
 // Theme fonts
 $font-family-title: 'Unica One', sans-serif;
-$serif: "Noto Sans", sans-serif;
-$f-sans-serif: "Noto Sans", sans-serif;
+$serif: "Quattrocento Sans", sans-serif;
+$f-sans-serif: "Quattrocento Sans", sans-serif;
 
 $text-color-primary: $off-white;
 // Introducing new variables
@@ -44,5 +44,3 @@ $warning-400: #ffe340;
 
 // for toggle theme button
 $page-color-transition: transparent .2s ease, color .2s ease;
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Unica+One&display=swap');

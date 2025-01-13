@@ -46,7 +46,8 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .white, a.course-card-title,
-.text-dark-500 {
+.text-dark-500,
+.sequence-navigation .previous-btn, .sequence-navigation .next-btn {
   color: $off-white !important;
 }
 

@@ -18,6 +18,11 @@ body {
   font-family: $serif;
 }
 
+body.view-in-course {
+    color: $off-white;
+    background-color: $light-dark;
+  }
+
 a, .btn-link {
   color: $primary;
 }
@@ -39,11 +44,14 @@ a.logo:hover {
 }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .h3, .h4, .h5, .h6,
+a.course-card-title {
   color: $off-white;
   text-transform: uppercase;
   font-family: $font-family-title !important;
 }
+
+
 
 .white, a.course-card-title,
 .text-dark-500,
@@ -71,6 +79,11 @@ h1, h2, h3, h4, h5, h6,
 #root header.customise.learning-header .course-title-lockup .course-info-header .title,
 #root header.customise.learning-header .course-title-lockup .course-info-header .org,
 #root header.customise.learning-header .course-title-lockup .nav-course a {
+    color: $off-white;
+}
+
+.pgn__menu {
+    background-color: $dark;
     color: $off-white;
 }
 
@@ -104,6 +117,18 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+.course-sidebar-section {
+    background: $body-background;
+}
+
+.bg-info-100 {
+    background-color: $primary-light;
+}
+
+.bg-light-200 {
+    background-color: $grey-level3;
+}
+
 .pgn__card .pgn__card-header .pgn__card-header-title,
 .pgn__card .pgn__card-header .pgn__card-header-title-sm,
 .pgn__card .pgn__card-header .pgn__card-header-title-md {
@@ -114,7 +139,7 @@ h1, h2, h3, h4, h5, h6,
 // Indigo styles
 
 body, .text-monospace, * {
-    font-family: 'Inter', sans-serif !important;
+    font-family: $serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -152,8 +177,11 @@ html {
                 font-size: 14px;
                 line-height: 20px;
                 a {
-                    color: $text-color-primary !important;
+                    color: $text-color-primary;
                     font-weight: 500;
+                }
+                a:focus, a:hover {
+                    color: $grey-level3;
                 }
                 button {
                     font-size: 14px;
@@ -366,12 +394,22 @@ html {
             }
         }
     }
+
+    .sequence {
+        border: none;
+    }
+
+    .sequence-navigation .previous-btn, .sequence-navigation .next-btn,
+    .sequence-navigation .btn  {
+        border: none !important;
+    }
+
     .sequence-container {
         width: 100%;
         .sequence {
             border-top: none;
             border-radius: 0 0 6px 6px;
-            #courseware-sequenceNavigation {
+            #courseware-sequence-navigation {
                 button.previous-btn, button.next-btn {
                     border-radius: 0;
                     border-top: none !important;
@@ -503,6 +541,7 @@ html {
         }
     }
 }
+
 @import "./header";
 @import "./footer";
 @import "./login";

@@ -1,8 +1,47 @@
+body.view-in-course {
+    background-color: $light-dark;
+}
+
 #courseHome-outline {
+    li:nth-of-type(4n+1) {
+        .pgn_collapsible {
+            background-color: $green;
+        }
+        .pgn-transition-replace-group {
+            background-color: $green-dark;
+        }
+    }
+
+    li:nth-of-type(4n+2) {
+        .pgn_collapsible {
+            background-color: $teal;
+        }
+        .pgn-transition-replace-group {
+            background-color: $teal-dark;
+        }
+    } 
+    li:nth-of-type(4n+3) {
+        .pgn_collapsible {
+            background-color: $purple;
+        }
+        .pgn-transition-replace-group {
+            background-color: $purple-dark;
+        }
+    }
+    li:nth-of-type(4n) {
+        .pgn_collapsible {
+            background-color: $red-alt;
+        }
+        .pgn-transition-replace-group {
+            background-color: $red-dark;
+        }
+    }
     .pgn_collapsible {
         border-radius: 8px;
-        border: 1px solid #E5E7EB;
-        border-left: 8px solid $primary-light;
+    }
+    .pgn-transition-replace-group {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
     .collapsible-trigger {
         padding: 8px 20px;
@@ -22,8 +61,14 @@
                 height: 24px;
             }
         }
+        .text-gray-400{
+            color: $text-color !important;
+        }
+        .btn-icon.btn-icon-primary {
+            background: $off-white;
+        }
         .text-success {
-            color: $primary !important;
+            color: $off-white !important;
         }
         .align-middle.col-6 {
             padding-left: 0;
@@ -32,6 +77,7 @@
             .col-7.ml-3.text-dark-500 {
                 flex: 0 0 83.33333333%;
                 max-width: 83.33333333%;
+                color: $grey-level2 !important;
             }
             .row {
                 margin: 0;
@@ -46,7 +92,10 @@
             padding: 0 0 0 91px;
         }
         .text-success {
-            color: $primary !important;
+            color: $off-white !important;
+        }
+        .text-gray-400{
+            color: $text-color !important;
         }
         ol {
             padding: 0 0 15px;
